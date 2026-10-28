@@ -30,31 +30,8 @@
 <header class="nav" id="nav">
   <div class="container nav__inner">
     <a href="#home" class="brand" aria-label="CRMO home">
-      <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 100 100" role="img">
-          <circle cx="50" cy="50" r="48" fill="#fff" stroke="#13528f" stroke-width="4"/>
-          <circle cx="50" cy="50" r="38" fill="none" stroke="#13528f" stroke-width="1.5"/>
-          <defs>
-            <path id="ring" d="M50,50 m-30,0 a30,30 0 1,1 60,0 a30,30 0 1,1 -60,0"/>
-          </defs>
-          <text class="brand__ring" fill="#13528f" font-size="9.5" font-weight="700" letter-spacing="0.6">
-            <textPath href="#ring" startOffset="2%">COLLEGE OF REGISTERED MANUAL OSTEOPATHS</textPath>
-          </text>
-          <!-- medicine wheel -->
-          <g transform="translate(50,32)">
-            <circle r="6.5" fill="#fff" stroke="#13528f" stroke-width="1"/>
-            <path d="M0,0 L0,-6.5 A6.5,6.5 0 0,1 6.5,0 Z" fill="#e0b83a"/>
-            <path d="M0,0 L6.5,0 A6.5,6.5 0 0,1 0,6.5 Z" fill="#c0392b"/>
-            <path d="M0,0 L0,6.5 A6.5,6.5 0 0,1 -6.5,0 Z" fill="#1f2937"/>
-          </g>
-          <!-- practitioner + patient figure -->
-          <g stroke="#13528f" stroke-width="3" stroke-linecap="round" fill="none">
-            <line x1="26" y1="66" x2="74" y2="66"/>
-            <circle cx="33" cy="59" r="3.6" fill="#13528f" stroke="none"/>
-            <line x1="39" y1="62" x2="56" y2="58"/>
-            <line x1="56" y1="58" x2="68" y2="62"/>
-          </g>
-        </svg>
+      <span class="brand__mark">
+        <img src="images/logo.jpg" alt="CRMO logo" />
       </span>
       <span class="brand__text">
         <strong>CRMO</strong>
@@ -81,8 +58,12 @@
 
 <!-- ===================== HERO ===================== -->
 <section class="hero" id="home">
-  <div class="hero__bg" style="background-image:url('https://images.pexels.com/photos/5473215/pexels-photo-5473215.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+  <div class="hero__bg is-active" style="background-image:url('https://images.pexels.com/photos/5473215/pexels-photo-5473215.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+  <div class="hero__bg" style="background-image:url('https://images.pexels.com/photos/5793796/pexels-photo-5793796.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+  <div class="hero__bg" style="background-image:url('https://images.pexels.com/photos/5793804/pexels-photo-5793804.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
   <div class="hero__overlay"></div>
+  <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
   <div class="container hero__inner">
     <div class="hero__content reveal">
       <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> National Non-Profit Indigenous Organization</p>
@@ -144,10 +125,10 @@
 <!-- ===================== VALUES STRIP ===================== -->
 <section class="values">
   <div class="container values__grid">
-    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-hand-holding-medical"></i></span><h3>Safe Care</h3><p>Every RMO is registered, supervised and held to a public code of ethics.</p></article>
-    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-drum"></i></span><h3>Indigenous Roots</h3><p>Manual osteopathy has its origins in traditional Indigenous medicine and healing arts.</p></article>
-    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-scale-balanced"></i></span><h3>Accountability</h3><p>A disciplinary board investigates every claim; decisions are made public.</p></article>
-    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-map"></i></span><h3>Nationwide</h3><p>Serving members practising on treaty and tribunal lands across Canada.</p></article>
+    <article class="value reveal" data-num="01"><span class="value__icon"><i class="fa-solid fa-hand-holding-medical"></i></span><h3>Safe Care</h3><p>Every RMO is registered, supervised and held to a public code of ethics.</p></article>
+    <article class="value reveal" data-num="02"><span class="value__icon"><i class="fa-solid fa-drum"></i></span><h3>Indigenous Roots</h3><p>Manual osteopathy has its origins in traditional Indigenous medicine and healing arts.</p></article>
+    <article class="value reveal" data-num="03"><span class="value__icon"><i class="fa-solid fa-scale-balanced"></i></span><h3>Accountability</h3><p>A disciplinary board investigates every claim; decisions are made public.</p></article>
+    <article class="value reveal" data-num="04"><span class="value__icon"><i class="fa-solid fa-map"></i></span><h3>Nationwide</h3><p>Serving members practising on treaty and tribunal lands across Canada.</p></article>
   </div>
 </section>
 
@@ -379,26 +360,8 @@
   <div class="container footer__grid">
     <div class="footer__col">
       <a href="#home" class="brand brand--footer">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="48" fill="#fff" stroke="#13528f" stroke-width="4"/>
-            <defs><path id="ringF" d="M50,50 m-30,0 a30,30 0 1,1 60,0 a30,30 0 1,1 -60,0"/></defs>
-            <text fill="#13528f" font-size="9.5" font-weight="700" letter-spacing="0.6">
-              <textPath href="#ringF" startOffset="2%">COLLEGE OF REGISTERED MANUAL OSTEOPATHS</textPath>
-            </text>
-            <g transform="translate(50,32)">
-              <circle r="6.5" fill="#fff" stroke="#13528f" stroke-width="1"/>
-              <path d="M0,0 L0,-6.5 A6.5,6.5 0 0,1 6.5,0 Z" fill="#e0b83a"/>
-              <path d="M0,0 L6.5,0 A6.5,6.5 0 0,1 0,6.5 Z" fill="#c0392b"/>
-              <path d="M0,0 L0,6.5 A6.5,6.5 0 0,1 -6.5,0 Z" fill="#1f2937"/>
-            </g>
-            <g stroke="#13528f" stroke-width="3" stroke-linecap="round" fill="none">
-              <line x1="26" y1="66" x2="74" y2="66"/>
-              <circle cx="33" cy="59" r="3.6" fill="#13528f" stroke="none"/>
-              <line x1="39" y1="62" x2="56" y2="58"/>
-              <line x1="56" y1="58" x2="68" y2="62"/>
-            </g>
-          </svg>
+        <span class="brand__mark">
+          <img src="images/logo.jpg" alt="CRMO logo" />
         </span>
         <span class="brand__text"><strong>CRMO</strong><span>College of Registered<br/>Manual Osteopaths</span></span>
       </a>

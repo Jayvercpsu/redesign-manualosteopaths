@@ -99,6 +99,39 @@
     revealEls.forEach((el) => el.classList.add("is-in"));
   }
 
+  /* ---------------- hero background slider ---------------- */
+  const heroSlides = $$(".hero__bg");
+  if (heroSlides.length > 1) {
+    let heroIndex = 0;
+    let heroTimer;
+
+    const showSlide = (i) => {
+      heroSlides[heroIndex].classList.remove("is-active");
+      heroIndex = (i + heroSlides.length) % heroSlides.length;
+      heroSlides[heroIndex].classList.add("is-active");
+    };
+    const startTimer = () => {
+      clearInterval(heroTimer);
+      heroTimer = setInterval(() => showSlide(heroIndex + 1), 5000);
+    };
+
+    $("#heroPrev").addEventListener("click", () => { showSlide(heroIndex - 1); startTimer(); });
+    $("#heroNext").addEventListener("click", () => { showSlide(heroIndex + 1); startTimer(); });
+
+    // swipe support (mobile)
+    const heroEl = $("#home");
+    let touchX = null;
+    heroEl.addEventListener("touchstart", (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+    heroEl.addEventListener("touchend", (e) => {
+      if (touchX === null) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 50) { showSlide(heroIndex + (dx < 0 ? 1 : -1)); startTimer(); }
+      touchX = null;
+    }, { passive: true });
+
+    startTimer();
+  }
+
   /* ---------------- animated counters ---------------- */
   const counters = $$("[data-count]");
   const runCounter = (el) => {
