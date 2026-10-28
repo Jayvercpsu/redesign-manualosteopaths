@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>College of Registered Manual Osteopaths (Canada)</title>
+<meta name="description" content="CRMO is a national non-profit Indigenous organization that registers and supervises qualified manual osteopaths (RMOs) practising on treaty and tribunal lands across Canada." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%2313528f'/><text y='68' x='50' text-anchor='middle' font-size='44' fill='white'>C</text></svg>" />
+</head>
+<body>
+
+<!-- ===================== TOP BAR ===================== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__item"><i class="fa-solid fa-location-dot"></i> 7250 Keele Street, Suite 412, Vaughan, ON</div>
+    <div class="topbar__links">
+      <a href="tel:+19055975897"><i class="fa-solid fa-phone"></i> (905) 597-5897</a>
+      <a href="mailto:info@manualosteopaths.org"><i class="fa-regular fa-envelope"></i> info@manualosteopaths.org</a>
+      <span class="topbar__flag" title="Canada"><span class="flag"><span class="flag__leaf">🍁</span></span> Canada</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="brand" aria-label="CRMO home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" role="img">
+          <circle cx="50" cy="50" r="48" fill="#fff" stroke="#13528f" stroke-width="4"/>
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#13528f" stroke-width="1.5"/>
+          <defs>
+            <path id="ring" d="M50,50 m-30,0 a30,30 0 1,1 60,0 a30,30 0 1,1 -60,0"/>
+          </defs>
+          <text class="brand__ring" fill="#13528f" font-size="9.5" font-weight="700" letter-spacing="0.6">
+            <textPath href="#ring" startOffset="2%">COLLEGE OF REGISTERED MANUAL OSTEOPATHS</textPath>
+          </text>
+          <!-- medicine wheel -->
+          <g transform="translate(50,32)">
+            <circle r="6.5" fill="#fff" stroke="#13528f" stroke-width="1"/>
+            <path d="M0,0 L0,-6.5 A6.5,6.5 0 0,1 6.5,0 Z" fill="#e0b83a"/>
+            <path d="M0,0 L6.5,0 A6.5,6.5 0 0,1 0,6.5 Z" fill="#c0392b"/>
+            <path d="M0,0 L0,6.5 A6.5,6.5 0 0,1 -6.5,0 Z" fill="#1f2937"/>
+          </g>
+          <!-- practitioner + patient figure -->
+          <g stroke="#13528f" stroke-width="3" stroke-linecap="round" fill="none">
+            <line x1="26" y1="66" x2="74" y2="66"/>
+            <circle cx="33" cy="59" r="3.6" fill="#13528f" stroke="none"/>
+            <line x1="39" y1="62" x2="56" y2="58"/>
+            <line x1="56" y1="58" x2="68" y2="62"/>
+          </g>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <strong>CRMO</strong>
+        <span>College of Registered<br/>Manual Osteopaths</span>
+      </span>
+    </a>
+
+    <nav class="nav__menu" id="navMenu" aria-label="Primary">
+      <a href="#home" class="nav__link is-active">Home</a>
+      <a href="#osteopathy" class="nav__link">Osteopathy</a>
+      <a href="#reporting" class="nav__link">Reporting</a>
+      <a href="#elders" class="nav__link">Council of Elders</a>
+      <a href="#land" class="nav__link">Land Acknowledgment</a>
+      <a href="#news" class="nav__link">News</a>
+      <a href="#members" class="nav__link">Members List</a>
+      <a href="#contact" class="nav__link nav__link--cta"><i class="fa-regular fa-paper-plane"></i> Contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="hero__bg" style="background-image:url('https://images.pexels.com/photos/5473215/pexels-photo-5473215.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__inner">
+    <div class="hero__content reveal">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> National Non-Profit Indigenous Organization</p>
+      <h1>Welcome to the <span class="grad">College of Registered Manual Osteopaths</span></h1>
+      <p class="hero__lead">Protecting the public's right to safe, ethical and qualified manual osteopathic care on treaty and tribunal lands across Canada.</p>
+      <div class="hero__actions">
+        <a href="#news" class="btn btn--ghost"><i class="fa-regular fa-newspaper"></i> News</a>
+        <a href="#contact" class="btn btn--light">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <ul class="hero__badges">
+        <li><i class="fa-solid fa-shield-heart"></i> Registered &amp; Supervised</li>
+        <li><i class="fa-solid fa-feather-pointed"></i> Indigenous-Led</li>
+        <li><i class="fa-solid fa-location-canada"></i> Canada-Wide</li>
+      </ul>
+    </div>
+
+    <aside class="hero__card reveal">
+      <div class="hero__card-head">
+        <span class="pulse"></span> Registered Manual Osteopaths
+      </div>
+      <p class="hero__card-title">The RMO title is your assurance of a qualified practitioner.</p>
+      <div class="hero__stats">
+        <div><b data-count="2019">0</b><span>Registered in Canada</span></div>
+        <div><b data-count="3">0</b><span>Indigenous nations served</span></div>
+        <div><b data-count="100">0</b><span>% Indigenous-led college</span></div>
+      </div>
+      <a href="#members" class="hero__card-link">Find an RMO <i class="fa-solid fa-arrow-right"></i></a>
+    </aside>
+  </div>
+  <div class="hero__wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,60 C240,110 480,0 720,25 C960,50 1200,100 1440,45 L1440,90 L0,90 Z" fill="#ffffff"/></svg></div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about">
+  <div class="container split">
+    <div class="split__media reveal">
+      <img src="https://images.pexels.com/photos/20860602/pexels-photo-20860602.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Manual osteopath treating a patient's back in a clinic" />
+      <div class="split__float">
+        <i class="fa-solid fa-certificate"></i>
+        <div><b>RMO</b><span>Protected, awarded title</span></div>
+      </div>
+      <div class="split__stripe" aria-hidden="true"></div>
+    </div>
+    <div class="split__body reveal">
+      <p class="eyebrow"><span class="eyebrow__line"></span> About CRMO</p>
+      <h2>A national Indigenous college protecting <em>safe &amp; ethical</em> osteopathic care</h2>
+      <p>The College of Registered Manual Osteopaths (Canada), based in Thornhill, Ontario, was registered as a national non-profit Indigenous organization on June 27, 2019. CRMO registers and supervises its members practising on treaty and tribunal lands of Indigenous Peoples, ensuring the public's right to safe and ethical manual osteopathic care is protected.</p>
+      <p>CRMO members are awarded the title of <strong>Registered Manual Osteopath (RMO)</strong>. The title assures the health practitioner is a qualified manual osteopath who meets the requirements of a registered manual osteopath.</p>
+      <ul class="checklist">
+        <li><i class="fa-solid fa-check"></i> Employees, management and board are all Indigenous peoples (First Nation, Métis, Inuit), by blood or by adoption.</li>
+        <li><i class="fa-solid fa-check"></i> Only qualified health professionals are eligible for the title of RMO.</li>
+        <li><i class="fa-solid fa-check"></i> CRMO is not registered as a regulatory agency under provincial health regulatory authorities.</li>
+      </ul>
+      <a href="#osteopathy" class="btn btn--primary">Learn about osteopathy <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VALUES STRIP ===================== -->
+<section class="values">
+  <div class="container values__grid">
+    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-hand-holding-medical"></i></span><h3>Safe Care</h3><p>Every RMO is registered, supervised and held to a public code of ethics.</p></article>
+    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-drum"></i></span><h3>Indigenous Roots</h3><p>Manual osteopathy has its origins in traditional Indigenous medicine and healing arts.</p></article>
+    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-scale-balanced"></i></span><h3>Accountability</h3><p>A disciplinary board investigates every claim; decisions are made public.</p></article>
+    <article class="value reveal"><span class="value__icon"><i class="fa-solid fa-map"></i></span><h3>Nationwide</h3><p>Serving members practising on treaty and tribunal lands across Canada.</p></article>
+  </div>
+</section>
+
+<!-- ===================== OSTEOPATHY ===================== -->
+<section class="section section--tint" id="osteopathy">
+  <div class="container split split--reverse">
+    <div class="split__media reveal">
+      <img src="https://images.pexels.com/photos/5793796/pexels-photo-5793796.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Shoulder and neck treatment in a modern therapy setting" />
+    </div>
+    <div class="split__body reveal">
+      <p class="eyebrow"><span class="eyebrow__line"></span> Osteopathy</p>
+      <h2>Rooted in Indigenous bodywork &amp; healing arts</h2>
+      <p>Manual osteopathy has roots in traditional Indigenous medicine, bodywork and healing arts. Dr. Andrew Taylor Still, MD, DO — founder of osteopathy — lived on Shawnee Tribe reservation land for a decade and was introduced to Shawnee and Cherokee bodywork.</p>
+      <p>Techniques introduced by Dr. Still, such as osteoarticular techniques and soft tissue therapy, as well as cranial osteopathy (from which craniosacral therapy originated) and visceral manipulation, all have origins in Native American bodywork and medicine.</p>
+      <div class="technique-grid">
+        <div class="technique"><i class="fa-solid fa-bone"></i><span>Osteoarticular techniques</span></div>
+        <div class="technique"><i class="fa-solid fa-hands"></i><span>Soft tissue therapy</span></div>
+        <div class="technique"><i class="fa-solid fa-brain"></i><span>Cranial osteopathy</span></div>
+        <div class="technique"><i class="fa-solid fa-heart-pulse"></i><span>Visceral manipulation</span></div>
+      </div>
+      <p class="pullquote">“We consider manual osteopathy a part of Indigenous Peoples heritage. We aim to protect the profession and the public from those who are not qualified to be known as registered manual osteopaths.”</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REPORTING ===================== -->
+<section class="section" id="reporting">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><span class="eyebrow__line"></span> Reporting</p>
+      <h2>Report a registered manual osteopath</h2>
+      <p>All RMOs must adhere to the codes of ethics established by CRMO. If a practitioner has behaved in a manner that is malpractice, unethical or unauthorized, you can report them directly to the College.</p>
+    </div>
+    <div class="cards3">
+      <article class="card reveal">
+        <span class="card__num">01</span>
+        <h3>Submit your report</h3>
+        <p>Reports from the public and third-party payers — including extended health plan insurers — are accepted by mail or email.</p>
+        <a href="mailto:info@manualosteopaths.org" class="card__link">info@manualosteopaths.org <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">02</span>
+        <h3>Board investigation</h3>
+        <p>CRMO's disciplinary board investigates every claim thoroughly and impartially, following the College's established code of ethics.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">03</span>
+        <h3>Public record</h3>
+        <p>Reports of the disciplinary action are made public, so the community can see the College fulfilling its mandate.</p>
+      </article>
+    </div>
+    <div class="report-banner reveal">
+      <div>
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> Need to file a complaint or report?</h3>
+        <p>Reach the Registrar's office and we will guide you through the process.</p>
+      </div>
+      <a href="#contact" class="btn btn--light">Contact the College <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COUNCIL OF ELDERS ===================== -->
+<section class="section section--dark" id="elders">
+  <div class="container">
+    <div class="section__head section__head--light reveal">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> Council of Elders</p>
+      <h2>Guided by distinguished Indigenous hereditary chiefs</h2>
+      <p>The Council of Elders provides cultural guidance, wisdom, leadership and advice to CRMO and its members — ensuring the perspectives and values of First Nations, Métis and Inuit communities are respected and represented within the College.</p>
+    </div>
+    <div class="elders">
+      <article class="elder elder--featured reveal">
+        <div class="elder__avatar"><i class="fa-solid fa-feather-pointed"></i></div>
+        <div>
+          <span class="elder__role">Chair, Council of Elders</span>
+          <h3>Hereditary Chief Delbert Good <em>(Si'm o Gyet Yobx)</em></h3>
+          <p>Of the Wii Gyet Clan House of the Gitxsan Nation in British Columbia, Chief Good represents a hereditary leadership tradition passed down through his family for approximately 1,000 years — one of the longest-standing hereditary leadership lineages in North America.</p>
+          <ul class="elder__contact">
+            <li><i class="fa-solid fa-location-dot"></i> P.O. Box 335, Kitwanga, BC V0J 2A0</li>
+            <li><i class="fa-solid fa-phone"></i> 250-849-5772</li>
+          </ul>
+        </div>
+      </article>
+      <div class="elders__list">
+        <div class="elder-mini reveal"><span class="elder-mini__dot"></span><div><b>Hereditary Chief Kym Guno-Good</b><small>Board Member</small></div></div>
+        <div class="elder-mini reveal"><span class="elder-mini__dot"></span><div><b>Hereditary Chief Arthur Morgan</b><small>Board Member</small></div></div>
+        <div class="elder-mini reveal"><span class="elder-mini__dot"></span><div><b>Alysia Good</b><small>Indigenous Peoples Public Member</small></div></div>
+        <div class="elder-mini reveal"><span class="elder-mini__dot"></span><div><b>Ruby Morgan</b><small>Indigenous Peoples Public Member</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LAND ACKNOWLEDGMENT ===================== -->
+<section class="land" id="land">
+  <div class="land__bg" style="background-image:url('https://images.pexels.com/photos/23439617/pexels-photo-23439617.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+  <div class="land__overlay"></div>
+  <div class="container land__inner reveal">
+    <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> Land Acknowledgment</p>
+    <blockquote>
+      “The office of the College of Registered Manual Osteopaths (Canada) is located on the ancestral lands of the <mark>Wendat</mark>, the <mark>Haudenosaunee</mark>, and the <mark>Anishinaabe</mark> peoples, who have left their footprints on Mother Earth before us. We respectfully acknowledge those who have walked on it, those who walk on it now, and future generations who have yet to walk upon it.”
+    </blockquote>
+    <p class="land__note">We wish to express gratitude to Mother Earth for the resources we are using, and honour all the Indigenous people who have been living on this land since time immemorial. We recommend that registered manual osteopaths post a land acknowledgement statement on their websites.</p>
+  </div>
+</section>
+
+<!-- ===================== NEWS ===================== -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><span class="eyebrow__line"></span> Latest News</p>
+      <h2>News &amp; announcements</h2>
+    </div>
+    <div class="news">
+      <article class="news__card news__card--feature reveal">
+        <img src="https://images.pexels.com/photos/20860579/pexels-photo-20860579.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Physiotherapist providing therapy to a patient" />
+        <div class="news__body">
+          <span class="news__tag">Directory</span>
+          <time datetime="2026-10-05"><i class="fa-regular fa-calendar"></i> October 5, 2026</time>
+          <h3>Photo Guidelines for the Registered Manual Osteopaths (RMO) Directory</h3>
+          <p>To ensure the Registered Manual Osteopaths Directory has a professional, consistent appearance, all RMOs are asked to follow the guidelines below when submitting their photo and directory information.</p>
+          <a href="#" class="card__link">Continue reading <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news__card reveal">
+        <img src="https://images.pexels.com/photos/20860615/pexels-photo-20860615.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Therapist assisting a patient with back exercises" />
+        <div class="news__body">
+          <span class="news__tag">Profession</span>
+          <time datetime="2026-09-12"><i class="fa-regular fa-calendar"></i> September 12, 2026</time>
+          <h3>CRMO welcomes new Registered Manual Osteopaths across treaty lands</h3>
+          <p>Following the Registration Committee's latest review, newly qualified practitioners have been awarded the RMO title.</p>
+          <a href="#" class="card__link">Continue reading <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news__card reveal">
+        <img src="https://images.pexels.com/photos/5793804/pexels-photo-5793804.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Therapist working on a patient's back during hands-on treatment" />
+        <div class="news__body">
+          <span class="news__tag">Education</span>
+          <time datetime="2026-08-01"><i class="fa-regular fa-calendar"></i> August 1, 2026</time>
+          <h3>Manual osteopathy: a part of Indigenous Peoples heritage</h3>
+          <p>From Shawnee and Cherokee bodywork to modern cranial and visceral techniques — the Indigenous origins of the profession.</p>
+          <a href="#" class="card__link">Continue reading <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MEMBERS LIST ===================== -->
+<section class="section section--tint" id="members">
+  <div class="container members">
+    <div class="members__body reveal">
+      <p class="eyebrow"><span class="eyebrow__line"></span> Members List</p>
+      <h2>Find a Registered Manual Osteopath</h2>
+      <p>Search the national directory of CRMO members who hold the protected title of RMO. Every listed practitioner is registered with the College, supervised, and accountable to its code of ethics.</p>
+      <form class="searchbar" id="memberSearch">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="memberQuery" placeholder="Search by name, city or province…" aria-label="Search members" />
+        <button type="submit" class="btn btn--primary">Search</button>
+      </form>
+      <p class="searchbar__hint" id="searchHint">Try a name such as <button type="button" class="chip" data-name="Bellis">Bellis</button> <button type="button" class="chip" data-name="Maendel">Maendel</button> <button type="button" class="chip" data-name="Carballo">Carballo</button></p>
+      <ul class="roster" id="roster"></ul>
+    </div>
+    <aside class="members__aside reveal">
+      <h3><i class="fa-solid fa-shield-halved"></i> Verify before you book</h3>
+      <p>The title <strong>RMO</strong> is protected. It ensures your health practitioner is a qualified manual osteopath who meets the requirements of a registered manual osteopath.</p>
+      <ul class="checklist">
+        <li><i class="fa-solid fa-check"></i> Registered &amp; supervised by CRMO</li>
+        <li><i class="fa-solid fa-check"></i> Bound by the College's code of ethics</li>
+        <li><i class="fa-solid fa-check"></i> Subject to public disciplinary process</li>
+      </ul>
+      <a href="mailto:info@manualosteopaths.org" class="btn btn--outline">Ask the College <i class="fa-solid fa-arrow-right"></i></a>
+    </aside>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact">
+  <div class="container contact">
+    <div class="contact__info reveal">
+      <p class="eyebrow"><span class="eyebrow__line"></span> Contact</p>
+      <h2>Get in touch with the College</h2>
+      <p>Questions about registration, reporting a practitioner, or the RMO directory? Our office in Vaughan, Ontario is here to help.</p>
+      <ul class="contact__list">
+        <li><span class="contact__icon"><i class="fa-solid fa-building-columns"></i></span><div><b>College of Registered Manual Osteopaths (Canada)</b><span>7250 Keele Street, Suites 412<br/>Vaughan, ON L4K 1Z8</span></div></li>
+        <li><span class="contact__icon"><i class="fa-solid fa-phone"></i></span><div><b>Telephone</b><a href="tel:+19055975897">(905) 597-5897</a></div></li>
+        <li><span class="contact__icon"><i class="fa-solid fa-envelope"></i></span><div><b>Email</b><a href="mailto:info@manualosteopaths.org">info@manualosteopaths.org</a></div></li>
+        <li><span class="contact__icon"><i class="fa-solid fa-share-nodes"></i></span><div><b>Follow the College</b>
+          <span class="socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </span>
+        </div></li>
+      </ul>
+      <div class="contact__map">
+        <iframe title="CRMO office location map" src="https://www.google.com/maps?q=7250+Keele+Street,+Vaughan,+ON+L4K+1Z8&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="contact__form-wrap reveal">
+      <form class="form" id="contactForm" novalidate>
+        <h3>Send us a message</h3>
+        <p>We reply to every enquiry within two business days.</p>
+        <div class="form__row">
+          <label>First name<input type="text" name="first" required placeholder="Amber" /></label>
+          <label>Last name<input type="text" name="last" required placeholder="Bellis" /></label>
+        </div>
+        <label>Email<input type="email" name="email" required placeholder="you@example.com" /></label>
+        <label>Subject
+          <select name="subject">
+            <option>Registration enquiry</option>
+            <option>Reporting a practitioner</option>
+            <option>RMO directory / photo guidelines</option>
+            <option>Council of Elders</option>
+            <option>General enquiry</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="5" required placeholder="How can we help?"></textarea></label>
+        <button type="submit" class="btn btn--primary btn--block">Send message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form__note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__glow" aria-hidden="true"></div>
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="#home" class="brand brand--footer">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" fill="#fff" stroke="#13528f" stroke-width="4"/>
+            <defs><path id="ringF" d="M50,50 m-30,0 a30,30 0 1,1 60,0 a30,30 0 1,1 -60,0"/></defs>
+            <text fill="#13528f" font-size="9.5" font-weight="700" letter-spacing="0.6">
+              <textPath href="#ringF" startOffset="2%">COLLEGE OF REGISTERED MANUAL OSTEOPATHS</textPath>
+            </text>
+            <g transform="translate(50,32)">
+              <circle r="6.5" fill="#fff" stroke="#13528f" stroke-width="1"/>
+              <path d="M0,0 L0,-6.5 A6.5,6.5 0 0,1 6.5,0 Z" fill="#e0b83a"/>
+              <path d="M0,0 L6.5,0 A6.5,6.5 0 0,1 0,6.5 Z" fill="#c0392b"/>
+              <path d="M0,0 L0,6.5 A6.5,6.5 0 0,1 -6.5,0 Z" fill="#1f2937"/>
+            </g>
+            <g stroke="#13528f" stroke-width="3" stroke-linecap="round" fill="none">
+              <line x1="26" y1="66" x2="74" y2="66"/>
+              <circle cx="33" cy="59" r="3.6" fill="#13528f" stroke="none"/>
+              <line x1="39" y1="62" x2="56" y2="58"/>
+              <line x1="56" y1="58" x2="68" y2="62"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand__text"><strong>CRMO</strong><span>College of Registered<br/>Manual Osteopaths</span></span>
+      </a>
+      <p>A national non-profit Indigenous organization registered on June 27, 2019, registering and supervising manual osteopaths on treaty and tribunal lands of Indigenous Peoples.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:info@manualosteopaths.org" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigation</h4>
+      <ul class="footer__links">
+        <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+        <li><a href="#osteopathy"><i class="fa-solid fa-angle-right"></i> Osteopathy</a></li>
+        <li><a href="#reporting"><i class="fa-solid fa-angle-right"></i> Reporting</a></li>
+        <li><a href="#elders"><i class="fa-solid fa-angle-right"></i> Council of Elders</a></li>
+        <li><a href="#land"><i class="fa-solid fa-angle-right"></i> Land Acknowledgment</a></li>
+        <li><a href="#news"><i class="fa-solid fa-angle-right"></i> News</a></li>
+        <li><a href="#members"><i class="fa-solid fa-angle-right"></i> Members List</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact Information</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-location-dot"></i><span>7250 Keele Street, Suites 412<br/>Vaughan, ON L4K 1Z8</span></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+19055975897">(905) 597-5897</a></li>
+        <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@manualosteopaths.org">info@manualosteopaths.org</a></li>
+      </ul>
+      <div class="footer__map">
+        <iframe title="Map of the CRMO office" src="https://www.google.com/maps?q=7250+Keele+Street,+Vaughan,+ON+L4K+1Z8&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="footer__map-btn" href="https://www.google.com/maps?q=7250+Keele+Street,+Vaughan,+ON+L4K+1Z8" target="_blank" rel="noopener">Open in Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>© <span id="year"></span> College of Registered Manual Osteopaths (Canada). Droit d'auteur / Copyright.</p>
+      <p class="footer__flags"><span class="flag"><span class="flag__leaf">🍁</span></span> Proudly serving Indigenous communities across Canada</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button class="totop" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
